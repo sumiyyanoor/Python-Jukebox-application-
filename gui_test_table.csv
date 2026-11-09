@@ -1,0 +1,11 @@
+Test ID,Sample input,Sample action,Expected output,Actual output
+T1,04,Enter 04 in Create Track List and click Add Track,The track is added to the playlist text area,Pass
+T2,99,Enter 99 in Create Track List and click Add Track,An error message says the track was not found,Pass
+T3,four,Enter four in Create Track List and click Add Track,A validation message says the track number must be numeric,Pass
+T4,,Click Play Playlist when the playlist is empty,An error message says there is nothing to play,Pass
+T5,01 then 03 then 05,Add three tracks and click Play Playlist,The play count for each chosen track increases by 1,Pass
+T6,,Click Reset in Create Track List,The playlist is cleared and the text area resets,Pass
+T7,02 and 5,Enter track 02 and rating 5 in Update Tracks then click Update Rating,The rating is updated and the track details are displayed,Pass
+T8,02 and 7,Enter track 02 and rating 7 then click Update Rating,A validation message says the rating must be between 1 and 5,Pass
+T9,xx and 3,Enter xx and 3 in Update Tracks then click Update Rating,A validation message says the track number must be numeric,Pass
+T10,99 and 4,Enter 99 and 4 in Update Tracks then click Update Rating,An error message says the track was not found,Pass
